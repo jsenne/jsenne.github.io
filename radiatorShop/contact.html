@@ -56,22 +56,82 @@
       <div class="row">
         <div class="col-md-12">
           <h2>We'd love to hear from you!</h2>
-          <p>Please contact us if you need information or would like to schedule an appointment. If you are from outside the area, we can arrange shipping options to accommodate your needs. </p>
+          <p>We are located near Loogootee, Indiana. Please contact us if you need additional information or would like to schedule an appointment. If you are from outside of the area, we can arrange shipping options to accommodate your needs. </p>
         </div>
-
-        <div class="col-sm-4 col-lg-4">
+        <div class="col-md-12"><br><!--spacing after paragraph--></div>
+        
+        <!-- HOURS OF OPERATION -->
+        <div class="col-sm-4 col-lg-4">        
             <div class="panel panel-default">
-              <div class="panel-heading"><h3>Business Hours</h3></div>
+              <div class="panel-heading"><h3><span class="glyphicon glyphicon-time"> </span> Hours of Operation</h3></div>
               <div class="panel-body">
-                Hours of operation go here. 
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>Time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mon - Fri</td>
+                      <td>8 AM - 5 PM (EST)</td>
+                    </tr>
+                    <tr>
+                      <td>Sat - Sun</td>
+                      <td>Closed</td>
+                    </tr>
+                  </tbody>
+                </table> 
               </div>
             </div>
-        </div>
+        
+        <!-- ADDRESS AND CONTACT INFORMATION -->
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Office</h3></div>
+              <div class="panel-body">
+                <address>
+                  <strong>Yoder's Radiator Repair</strong>
+                    <br>10792 East U.S. Highway 50
+                    <br>Cannelburg, IN 47519
+                    <br><a href="http://maps.apple.com/?q=Yoder's Radiator Repair 10792 East U.S. Highway 50 Cannelburg, IN 47519">Map it!</a>
+                  </address>
+                  <br><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:8122954084"> (812)295-4084</a>
+                  <br><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:yodersradiator@live.com"> YodersRadiator@live.com</a>
+              </div>
+            </div>
+      </div>
+
+
+            
+        <!-- CONTACT FORM -->
         <div class="col-12 col-lg-8">
             <div class="panel panel-default">
-              <div class="panel-heading"><h3>Send us an E-mail</h3></div>
+              <div class="panel-heading"><h3><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send us an E-mail</h3></div>
               <div class="panel-body">
-                E-mail form goes here. 
+                <form role="form" id ="feedbackForm" action="" method="post">
+                	<div>
+						<!--NAME-->
+						<div class="form-group">
+							<label for="name">Name</label>
+							<div class="form-group">
+								<input type="text" class="form-control" name="name" id="nameame" placeholder="What is your name?">
+							</div>
+						</div>
+						<!--EMAIL-->
+						<div class="form-group">
+							<label for="email">E-mail</label>
+							<div class="form-group">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Please enter your E-mail address.">
+							</div>
+						</div>
+						<!-- MESSAGE -->
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Enter your message here."></textarea>
+						</div>
+                	</div>
+                </form> 
               </div>
             </div>
         </div>
