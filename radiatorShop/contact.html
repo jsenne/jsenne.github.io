@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -125,12 +127,20 @@
 								<input type="email" class="form-control" name="email" id="email" placeholder="Please enter your E-mail address.">
 							</div>
 						</div>
+						<!-- TELEPHONE -->
+						<div class="form-group">
+							<label for="tel">Telephone Number</label>
+							<input type="tel" class="form-control" name="tel" id="tel" placeholder="XXX-XXX-XXXX">
+						</div>
 						<!-- MESSAGE -->
 						<div class="form-group">
 							<label for="message">Message</label>
 							<textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Enter your message here."></textarea>
 						</div>
                 	</div>
+                	<!-- CAPTCHA -->
+                	<div class="g-recaptcha" data-sitekey="6LcOEgQTAAAAAPly1v21dujQ_4AAPptgjcNcH9aP"></div>
+                	<button type="submit" id="submitButton" class="btn btn-primary btn-lg">Submit</button>
                 </form> 
               </div>
             </div>
@@ -143,7 +153,10 @@
       <footer>
         <p>&copy; Yoder's Radiator Repair 2015</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> <!-- /container -->        
+	<!-- Google reCAPTCHA script -->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
@@ -159,5 +172,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        
     </body>
 </html>
