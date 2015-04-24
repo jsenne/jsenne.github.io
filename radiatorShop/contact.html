@@ -15,7 +15,7 @@
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/bootstrap-flatly-theme.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -58,12 +58,29 @@
       <div class="row">
         <div class="col-md-12">
           <h2>We'd love to hear from you!</h2>
-          <p>We are located near Loogootee, Indiana. Please contact us if you need additional information or would like to schedule an appointment. If you are from outside of the area, we can arrange shipping options to accommodate your needs. </p>
+          <p>We are located near Loogootee, Indiana. Please contact us if you need additional information or would like to schedule an appointment. If you are from outside of the area, we can arrange shipping options to accommodate your needs. <span id="operationalStatus">The local time is <span id="local_time" class="text-info"></span>, and we are currently <span id="open_or_closed"></span>.</span></p>
         </div>
         <div class="col-md-12"><br><!--spacing after paragraph--></div>
         
-        <!-- HOURS OF OPERATION -->
-        <div class="col-sm-4 col-lg-4">        
+        
+        <div class="col-sm-4 col-lg-4">
+
+          <!-- ADDRESS AND CONTACT INFORMATION -->
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Office</h3></div>
+              <div class="panel-body">
+                <address>
+                  <strong>Yoder's Radiator Repair</strong>
+                    <br>10792 East U.S. Highway 50
+                    <br>Cannelburg, IN 47519
+                    <br><a href="http://maps.apple.com/?q=Yoder's Radiator Repair 10792 East U.S. Highway 50 Cannelburg, IN 47519">Map it!</a>
+                  </address>
+                  <br><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:8122954084"> (812)295-4084</a>
+                  <br><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:yodersradiator@live.com"> YodersRadiator@live.com</a>
+              </div>
+            </div>
+
+            <!-- HOURS OF OPERATION -->
             <div class="panel panel-default">
               <div class="panel-heading"><h3><span class="glyphicon glyphicon-time"> </span> Hours of Operation</h3></div>
               <div class="panel-body">
@@ -88,20 +105,7 @@
               </div>
             </div>
         
-        <!-- ADDRESS AND CONTACT INFORMATION -->
-        <div class="panel panel-default">
-            <div class="panel-heading"><h3><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Office</h3></div>
-              <div class="panel-body">
-                <address>
-                  <strong>Yoder's Radiator Repair</strong>
-                    <br>10792 East U.S. Highway 50
-                    <br>Cannelburg, IN 47519
-                    <br><a href="http://maps.apple.com/?q=Yoder's Radiator Repair 10792 East U.S. Highway 50 Cannelburg, IN 47519">Map it!</a>
-                  </address>
-                  <br><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><a href="tel:8122954084"> (812)295-4084</a>
-                  <br><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:yodersradiator@live.com"> YodersRadiator@live.com</a>
-              </div>
-            </div>
+        
       </div>
 
 
@@ -139,20 +143,27 @@
 						</div>
                 	</div>
                 	<!-- CAPTCHA -->
-                	<div class="g-recaptcha" data-sitekey="6LcOEgQTAAAAAPly1v21dujQ_4AAPptgjcNcH9aP"></div>
-                  <br>
-                	<button type="submit" id="submitButton" class="btn btn-primary btn-lg">Submit</button>
+                	<div class="col-md-12">
+                  <div class="g-recaptcha" data-sitekey="6LcOEgQTAAAAAPly1v21dujQ_4AAPptgjcNcH9aP"></div>
+                  
+                	<button type="submit" id="submitButton" class="btn btn-primary btn-lg" style="margin-top: 2%">Submit</button>
+                  </div>
                 </form> 
               </div>
             </div>
         </div>
+
+        <!-- MAP -->
+        
         
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; Yoder's Radiator Repair 2015</p>
+        <div class="col-md-3 pull-left">
+          <p>&copy; 2015 Yoder's Radiator Repair<br> <address><a href="http://maps.apple.com/?q=Yoder's Radiator Repair 10792 East U.S. Highway 50 Cannelburg, IN 47519"> 10792 E. US Hwy 50 <br> Cannelburg, IN - 47519</a></address> <br> <a href="tel:8122954084"> (812)295-4084</a> <br> <a href="mailto:yodersradiator@live.com"> YodersRadiator@live.com</a></p>
+        </div>
       </footer>
     </div> <!-- /container -->        
 	<!-- Google reCAPTCHA script -->
