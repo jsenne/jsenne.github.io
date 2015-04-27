@@ -115,13 +115,13 @@
             <div class="panel panel-default">
               <div class="panel-heading"><h3><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Send us an E-mail</h3></div>
               <div class="panel-body">
-                <form role="form" id ="feedbackForm" action="" method="post">
+                <form role="form" id="feedbackForm"  method="post" action="contact_process.php">
                 	<div>
 						<!--NAME-->
 						<div class="form-group">
 							<label for="name">Name</label>
 							<div class="form-group">
-								<input type="text" class="form-control" name="name" id="nameame" placeholder="What is your name?">
+								<input type="text" class="form-control" name="name" id="name" placeholder="What is your name?">
 							</div>
 						</div>
 						<!--EMAIL-->
@@ -134,8 +134,27 @@
 						<!-- TELEPHONE -->
 						<div class="form-group">
 							<label for="tel">Telephone Number</label>
-							<input type="tel" class="form-control" name="tel" id="tel" placeholder="XXX-XXX-XXXX">
+							<input type="tel" class="form-control" name="tel" id="tel" placeholder="No special characters, please.">
 						</div>
+            <div class="form-group">
+              <label for="contact_preference">Your Preferred Contact Method</label>
+                <div class="input-group">
+
+                  <!-- RADIO FORMATTING (Style radio buttons as toggle buttons-->
+                  <div class="btn-group" data-toggle="buttons">
+                      <label class="btn btn-default contact-preference">
+                          <input type="radio" id="prefer_telephone" name="contact_preference" value="prefer_telephone" /> Telephone
+                      </label> 
+                      <label class="btn btn-default contact-preference">
+                          <input type="radio" id="prefer_email" name="contact_preference" value="prefer_email" /> E-mail
+                      </label> 
+                      <label class="btn btn-default contact-preference">
+                          <input type="radio" id="no_preference" name="contact_preference" value="no_preference" checked="checked" /> No Preference
+                      </label> 
+                  </div>       
+                  <!-- END RADIO FORMATTING -->
+                </div>
+            </div>
 						<!-- MESSAGE -->
 						<div class="form-group">
 							<label for="message">Message</label>
